@@ -1,0 +1,96 @@
+        body {
+            background: linear-gradient(to right, #5851db, #e1306c, #833ab4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .swiper {
+            width: 500px;
+            height: 800px;
+            position: relative;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .glass-container {
+            width: 400px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            box-shadow: none;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            will-change: transform;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .big-line {
+            width: 100%;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+        }
+
+        .circle {
+            width: 40px;
+            height: 40px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .line {
+            width: 100%;
+            height: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+
+        .line.short {
+            width: 60%;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            filter: none;
+            transform: scale(0.8);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .swiper-slide.swiper-slide-active {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        .swiper-slide.swiper-slide-prev,
+        .swiper-slide.swiper-slide-next {
+            transform: scale(0.9);
+            opacity: 0.8;
+        }
+
+
+        .swiper-slide[aria-label="Slide 1"],
+        .swiper-slide[aria-label="Slide 2"],
+        .swiper-slide[aria-label="Slide 3"],
+        .swiper-slide[aria-label="Slide 4"],
+        .swiper-slide[aria-label="Slide 5"],
+        .swiper-slide[aria-label="Slide 6"] {
+            transition: opacity 0.3s ease;
+        }
