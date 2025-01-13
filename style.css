@@ -20,7 +20,7 @@
 
         .glass-container {
             width: 400px;
-            height: 400px;
+            height: 300px;
             background: rgba(255, 255, 255, 0.1);
             border-radius: 20px;
             box-shadow: none;
@@ -38,7 +38,7 @@
 
         .big-line {
             width: 100%;
-            height: 100px;
+            height: 150px;
             background: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
         }
@@ -49,20 +49,22 @@
             background: rgba(255, 255, 255, 0.3);
             border-radius: 50%;
             position: absolute;
-            bottom: 20px;
-            left: 20px;
+            bottom: 80px;
+            left: 10px;
         }
 
         .line {
-            width: 100%;
-            height: 10px;
+            width: 300px;
+            height: 20px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 5px;
-            margin: 5px 0;
+
         }
 
         .line.short {
-            width: 60%;
+            width: 250px;
+            height: 10px;
+            margin-bottom: 50px;
         }
 
         .swiper-slide {
